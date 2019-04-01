@@ -1,0 +1,109 @@
+{% extends 'home/home.html'%}
+{% load static %}
+{% block change%}
+
+	<!-- banner 2 -->
+	<div class="inner-banner-w3ls">
+		<div class="container">
+
+		</div>
+		<!-- //banner 2 -->
+	</div>
+	<!-- page details -->
+	<div class="breadcrumb-agile">
+		<div aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item">
+					<a href="index.html">Home</a>
+				</li>
+				<li class="breadcrumb-item active" aria-current="page">Appointment</li>
+			</ol>
+		</div>
+	</div>
+	<!-- //page details -->
+
+{% endblock %}
+
+{% block body%}
+
+	<!-- contact -->
+	<div class="appointment py-5">
+		<div class="py-xl-5 py-lg-3">
+			<div class="w3ls-titles text-center mb-5">
+				<h3 class="title">Appointment</h3>
+				<span>
+					<i class="fas fa-user-md"></i>
+				</span>
+				<p class="mt-2">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div class="d-flex">
+				<div class="appoint-img">
+
+				</div>
+				<div class="contact-right-w3l appoint-form">
+					<h5 class="title-w3 text-center mb-5">Fill your appointment form</h5>
+					<form action="#" method="post">
+						<div class="form-group">
+							<label for="recipient-name" class="col-form-label">Your Name</label>
+							<input type="text" class="form-control" placeholder="Your Name " name="Name" id="recipient-name" required="">
+						</div>
+						<div class="form-group">
+							<label for="recipient-phone" class="col-form-label">Your Email</label>
+							<input type="email" class="form-control" placeholder="Your Email" name="email" id="recipient-phone" required="">
+						</div>
+						<div class="form-group">
+							<label for="datepicker" class="col-form-label">Select your doctor</label>
+							<select required="" class="form-control">
+								<option value="">Select your doctor</option>
+								<option value="1">Anne Dan</option>
+								<option value="2">Carol Una</option>
+								<option value="3">Diana Sue</option>
+								<option value="4">Irene Sally</option>
+								<option value="4">Jane Mary</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="datepicker" class="col-form-label">Select appointment date</label>
+							<input placeholder="Date" class="date form-control" id="datepicker" type="text" value="" onfocus="this.value = '';"
+							    onblur="if (this.value == '') {this.value = '';}" required="" />
+						</div>
+						<div class="form-group">
+							<label for="datepicker" class="col-form-label">Select appointment time</label>
+							<select required="" class="form-control">
+								<option value="">Select Time</option>
+								<option value="1">08:00-8:30</option>
+								<option value="2">08:30-9:00</option>
+								<option value="3"> 09:00-9:30</option>
+								<option value="4">09:30-10:00</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="datepicker" class="col-form-label">Select City</label>
+							<select required="" class="form-control">
+								<option value="">Select City</option>
+								<option value="1">city1</option>
+								<option value="2">city2</option>
+								<option value="3"> city3</option>
+								<option value="4">city4</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="datepicker" class="col-form-label">Select Speciality</label>
+							<select required="" class="form-control">
+								<option value="">Select Speciality</option>
+								<option value="1">Dermatology</option>
+								<option value="2">ENT</option>
+								<option value="3"> Genaral Medicine</option>
+								<option value="4">Nutritionist</option>
+							</select>
+						</div>
+						<input type="submit" value="Book Appointment" class="btn_apt">
+					</form>
+				</div>
+				<div class="clerafix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- //contact -->
+
+{% endblock %}
